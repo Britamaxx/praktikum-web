@@ -7,95 +7,148 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <div class="header-left">
-            <img src="logo1.png" alt="Novely Logo" class="logo">
-            <h1>Novely</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo1.png" alt="Novely Logo" class="logo-image">
+            Novely
         </div>
-        <div class="search-form-container">
-            <form class="search-form">
-                <input type="text" placeholder="Cari novel...">
-                <button type="submit">Cari</button>
-            </form>
+        <div class="search-bar">
+            <input type="text" placeholder="Cari novel...">
+            <button>Cari</button>
         </div>
-        <nav class="header-right">
-            <ul>
-                <li><a href="#">Novel List</a></li>
-                <li><a href="#">Genre</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="nav-links">
+            <a href="#">Novel List</a>
+            <a href="#">Genre</a>
+            <a href="#">Login</a>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
 
-    <main>
-        <section>
-            <div class="hot-novel">
-                <h2>Novel Terpopuler</h2>
-                <div class="novel-grid">
-                    <div class="novel-card">
-                        <img src="https://picsum.photos/200/300?random=1" alt="Novel">
-                        <p>I Was Just Bluffing... Now They're All Emperors?!</p>
+    <div class="container">
+        <div class="main-content">
+            <div>
+                <section class="section">
+                    <h2 class="section-title">Novel Terpopuler</h2>
+                    <div class="novel-grid">
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=1" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">I Was Just Bluffing... Now They're All Emperors?!</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=2" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">The Legendary Mechanic</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=3" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">Pampered by My Three Brothers</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=4" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">World Defying Dan God</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=5" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">Martial God Asura</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=6" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">Against the Gods</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=7" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">Tales of Demons and Gods</div>
+                            </div>
+                        </div>
+                        <div class="novel-card">
+                            <img class="novel-image" src="https://picsum.photos/200/280?random=8" alt="Novel Cover">
+                            <div class="novel-info">
+                                <div class="novel-title">Versatile Mage</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="novel-card">
-                        <img src="https://picsum.photos/200/300?random=2" alt="Novel">
-                        <p>The Legendary Mechanic</p>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Rilis Terbaru</h2>
+                    <div class="latest-releases">
+                        <div class="release-item">
+                            <div class="release-title">The World Is Mine For The Taking</div>
+                            <div class="release-info">
+                                <span class="release-chapter">Chapter 887</span>
+                                <span>1 min ago</span>
+                            </div>
+                        </div>
+                        <div class="release-item">
+                            <div class="release-title">Final Life Online</div>
+                            <div class="release-info">
+                                <span class="release-chapter">Chapter 102</span>
+                                <span>3 min ago</span>
+                            </div>
+                        </div>
+                        <div class="release-item">
+                            <div class="release-title">The Greek Villain</div>
+                            <div class="release-info">
+                                <span class="release-chapter">Chapter 72</span>
+                                <span>7 min ago</span>
+                            </div>
+                        </div>
+                        <div class="release-item">
+                            <div class="release-title">Supreme Magus</div>
+                            <div class="release-info">
+                                <span class="release-chapter">Chapter 3451</span>
+                                <span>12 min ago</span>
+                            </div>
+                        </div>
+                        <div class="release-item">
+                            <div class="release-title">Keyboard Immortal</div>
+                            <div class="release-info">
+                                <span class="release-chapter">Chapter 2156</span>
+                                <span>18 min ago</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="novel-card">
-                        <img src="https://picsum.photos/200/300?random=3" alt="Novel">
-                        <p>Pampered by My Three Brothers</p>
-                    </div>
-                    <div class="novel-card">
-                        <img src="https://picsum.photos/200/300?random=4" alt="Novel">
-                        <p>World Defying Dan God</p>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="genre-section">
+                    <h3 class="genre-title">Genre</h3>
+                    <div class="genre-grid">
+                        <div class="genre-btn">Action</div>
+                        <div class="genre-btn">Adventure</div>
+                        <div class="genre-btn">Comedy</div>
+                        <div class="genre-btn">Drama</div>
+                        <div class="genre-btn">Fantasy</div>
+                        <div class="genre-btn">Harem</div>
+                        <div class="genre-btn">Romance</div>
+                        <div class="genre-btn">Isekai</div>
+                        <div class="genre-btn">Historical</div>
+                        <div class="genre-btn">Martial Arts</div>
+                        <div class="genre-btn">Mystery</div>
+                        <div class="genre-btn">Sci-Fi</div>
                     </div>
                 </div>
-            </div>
-
-            <div class="latest">
-                <h2>Rilis Terbaru</h2>
-                <table class="release-list">
-                    <tr>
-                        <td>The World Is Mine For The Taking</td>
-                        <td><a href="#">Chapter 887</a></td>
-                        <td>1 min ago</td>
-                    </tr>
-                    <tr>
-                        <td>Final Life Online</td>
-                        <td><a href="#">Chapter 102</a></td>
-                        <td>3 min ago</td>
-                    </tr>
-                    <tr>
-                        <td>The Greek Villain</td>
-                        <td><a href="#">Chapter 72</a></td>
-                        <td>7 min ago</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <aside>
-            <div class="genres">
-                <h2>Genre</h2>
-                <ul>
-                    <li>Action</li>
-                    <li>Adventure</li>
-                    <li>Comedy</li>
-                    <li>Drama</li>
-                    <li>Fantasy</li>
-                    <li>Harem</li>
-                    <li>Romance</li>
-                    <li>Isekai</li>
-                    <li>Historical</li>
-                    <li>Martial Arts</li>
-                </ul>
-            </div>
-        </aside>
-    </main>
+            </aside>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Novely. Hak Cipta Dilindungi.</p>
+        <p>© 2025 Novely. Hak Cipta Dilindungi.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
